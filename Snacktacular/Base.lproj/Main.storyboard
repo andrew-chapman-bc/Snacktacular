@@ -230,7 +230,7 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="camera.fill" catalog="system" title=" Photo">
+                                        <buttonConfiguration key="configuration" style="plain" image="camera.fill" catalog="system" title="  Photo">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                         </buttonConfiguration>
                                     </button>
@@ -270,6 +270,11 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="IYr-NZ-6w9">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="Kas-KH-d5r" id="VyR-MI-PMJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="EA4-uY-fxj">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="Kas-KH-d5r" id="9nj-9n-YD0"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -352,7 +357,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lIm-L2-qKk"/>
+        <segue reference="upO-ze-992"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
