@@ -14,7 +14,6 @@
 		F0A6164D272EF669002D0D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A6164B272EF669002D0D16 /* Main.storyboard */; };
 		F0A6164F272EF66E002D0D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A6164E272EF66E002D0D16 /* Assets.xcassets */; };
 		F0A61652272EF66E002D0D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A61650272EF66E002D0D16 /* LaunchScreen.storyboard */; };
-		F0A6165A272EFEBC002D0D16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0A61659272EFEBC002D0D16 /* GoogleService-Info.plist */; };
 		F0A6165C272F48BA002D0D16 /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A6165B272F48B9002D0D16 /* SpotListViewController.swift */; };
 		F0A6165E272F4C63002D0D16 /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A6165D272F4C63002D0D16 /* SpotTableViewCell.swift */; };
 		F0A61660272F5EBD002D0D16 /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A6165F272F5EBD002D0D16 /* SpotDetailViewController.swift */; };
@@ -22,6 +21,7 @@
 		F0A61664272FB192002D0D16 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A61663272FB191002D0D16 /* UIViewController+alert.swift */; };
 		F0A61666272FB454002D0D16 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A61665272FB454002D0D16 /* Spots.swift */; };
 		F0A61668272FBC00002D0D16 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A61667272FBBFF002D0D16 /* APIKeys.swift */; };
+		F0A6166A27307133002D0D16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0A6166927307133002D0D16 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,6 @@
 		F0A6164E272EF66E002D0D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0A61651272EF66E002D0D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0A61653272EF66E002D0D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0A61659272EFEBC002D0D16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F0A6165B272F48B9002D0D16 /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
 		F0A6165D272F4C63002D0D16 /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
 		F0A6165F272F5EBD002D0D16 /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		F0A61663272FB191002D0D16 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		F0A61665272FB454002D0D16 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
 		F0A61667272FBBFF002D0D16 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		F0A6166927307133002D0D16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 				F0A6164E272EF66E002D0D16 /* Assets.xcassets */,
 				F0A61650272EF66E002D0D16 /* LaunchScreen.storyboard */,
 				F0A61653272EF66E002D0D16 /* Info.plist */,
-				F0A61659272EFEBC002D0D16 /* GoogleService-Info.plist */,
+				F0A6166927307133002D0D16 /* GoogleService-Info.plist */,
 			);
 			path = Snacktacular;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0A61652272EF66E002D0D16 /* LaunchScreen.storyboard in Resources */,
-				F0A6165A272EFEBC002D0D16 /* GoogleService-Info.plist in Resources */,
+				F0A6166A27307133002D0D16 /* GoogleService-Info.plist in Resources */,
 				F0A6164F272EF66E002D0D16 /* Assets.xcassets in Resources */,
 				F0A6164D272EF669002D0D16 /* Main.storyboard in Resources */,
 			);

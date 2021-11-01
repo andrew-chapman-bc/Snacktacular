@@ -234,18 +234,25 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                         </buttonConfiguration>
                                     </button>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ndc-0y-phk">
+                                        <rect key="frame" x="0.0" y="62" width="414" height="180"/>
+                                    </mapView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="8ae-gk-jE1" secondAttribute="trailing" id="2pO-OS-ItC"/>
                                     <constraint firstAttribute="trailing" secondItem="VgH-sL-QsK" secondAttribute="trailing" constant="8" id="4i0-tW-QuN"/>
+                                    <constraint firstItem="ndc-0y-phk" firstAttribute="top" secondItem="Fsn-3i-2Ww" secondAttribute="bottom" constant="2" id="6oH-at-Ayi"/>
+                                    <constraint firstItem="8ae-gk-jE1" firstAttribute="top" secondItem="ndc-0y-phk" secondAttribute="bottom" id="7LK-Ds-vwY"/>
                                     <constraint firstItem="VgH-sL-QsK" firstAttribute="top" secondItem="shN-xC-3lO" secondAttribute="top" constant="8" id="Fgq-gR-3DV"/>
                                     <constraint firstAttribute="height" constant="380" id="Fgw-Ti-xNy"/>
+                                    <constraint firstAttribute="trailing" secondItem="ndc-0y-phk" secondAttribute="trailing" id="HBv-IH-k4l"/>
                                     <constraint firstItem="VgH-sL-QsK" firstAttribute="leading" secondItem="shN-xC-3lO" secondAttribute="leading" constant="8" id="HQm-93-SsC"/>
                                     <constraint firstItem="8ae-gk-jE1" firstAttribute="leading" secondItem="shN-xC-3lO" secondAttribute="leading" id="Ijl-Ve-CLE"/>
                                     <constraint firstItem="9Rw-5j-dCW" firstAttribute="top" secondItem="8ae-gk-jE1" secondAttribute="bottom" constant="4" id="Szy-yy-DLQ"/>
                                     <constraint firstAttribute="trailing" secondItem="9Rw-5j-dCW" secondAttribute="trailing" constant="8" id="Tco-iw-mb8"/>
                                     <constraint firstItem="Fsn-3i-2Ww" firstAttribute="leading" secondItem="shN-xC-3lO" secondAttribute="leading" constant="8" id="cxp-B0-JJ1"/>
+                                    <constraint firstItem="ndc-0y-phk" firstAttribute="leading" secondItem="shN-xC-3lO" secondAttribute="leading" id="hFP-Gw-Di0"/>
                                     <constraint firstItem="8ae-gk-jE1" firstAttribute="top" secondItem="shN-xC-3lO" secondAttribute="top" constant="242" id="iSk-Gf-cbF"/>
                                     <constraint firstItem="9Rw-5j-dCW" firstAttribute="leading" secondItem="4DY-Tu-3jt" secondAttribute="trailing" constant="8" id="iU0-pt-8Dk" userLabel="Rating.leading =  Photo.trailing + 8"/>
                                     <constraint firstItem="Fsn-3i-2Ww" firstAttribute="top" secondItem="VgH-sL-QsK" secondAttribute="bottom" constant="2" id="pPn-mi-YBa"/>
@@ -285,6 +292,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressTextField" destination="Fsn-3i-2Ww" id="ip5-wB-n6G"/>
+                        <outlet property="mapView" destination="ndc-0y-phk" id="jUP-Gj-OcB"/>
                         <outlet property="nameTextField" destination="VgH-sL-QsK" id="2oI-tr-1Lb"/>
                         <outlet property="ratingLabel" destination="Mi9-vV-Rla" id="29Q-iL-QqG"/>
                     </connections>
@@ -367,7 +375,7 @@
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="PrimaryColor">
-            <color red="0.92575019599999997" green="0.31034272909999999" blue="0.1337662339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.92599999904632568" green="0.31000000238418579" blue="0.13400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
