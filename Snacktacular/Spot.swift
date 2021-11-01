@@ -33,6 +33,15 @@ class Spot {
         self.init(name: "", address: "", averageRating: 0.0, numberOfReviews: 0, postingUserID: "", documentID: "")
     }
     
+    convenience init(dictionary: [String: Any]) {
+            let name = dictionary["name"] as! String? ?? ""
+            let address = dictionary["address"] as! String? ?? ""
+            let averageRating = dictionary["averageRating"] as! Double? ?? 0.0
+            let numberOfReviews = dictionary["numberOfReviews"] as! Int? ?? 0
+            let postingUserID = dictionary["postingUserID"] as! String? ?? ""
+            self.init(name: name, address: address, averageRating: averageRating, numberOfReviews: numberOfReviews, postingUserID: postingUserID, documentID: "")
+    }
+    
     func saveData(completion: @escaping (Bool) -> ()) {
         let db = Firestore.firestore()
         // Grab the user ID
