@@ -19,9 +19,33 @@ class ReviewTableViewController: UITableViewController {
     @IBOutlet weak var reviewTextView: UITextView!
     @IBOutlet weak var deleteButton: UIButton!
     
+    var review: Review!
+    var spot: Spot!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard spot != nil else {
+            print("ERROR: No spot passed to ReviewTableViewController.swift")
+            return
+        }
+        if review == nil {
+            review = Review()
+        }
+        updateUserInterface()
+    }
+    
+    func updateUserInterface() {
+        nameLabel.text = spot.name
+        addressLabel.text = spot.address
+        reviewTitleField.text = review.title
+        reviewTextView.text = review.text
+        // TODO: Update for rating
+    }
 
+    func updateFromUserInterface() {
+        review.title = reviewTitleField.text!
+        review.text = reviewTextView.text!
     }
     
     func leaveViewController() {
@@ -43,6 +67,14 @@ class ReviewTableViewController: UITableViewController {
         leaveViewController()
     }
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+        updateFromUserInterface()
+        review.saveData(spot: spot) { (success) in
+            if success {
+                self.leaveViewController()
+            } else  {
+                print("ERROR: Can't unwind segue from Review because of review saving error.")
+            }
+        }
     }
     
 }
