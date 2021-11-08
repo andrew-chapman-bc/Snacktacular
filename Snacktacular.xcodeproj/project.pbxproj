@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AFA074F9BA556F3FFE9E4C63 /* Pods_Snacktacular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F114803F3AACDD3112F0B8E /* Pods_Snacktacular.framework */; };
+		F048AB472738A7CC007E8388 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F048AB462738A7CC007E8388 /* ReviewTableViewController.swift */; };
 		F0A61646272EF669002D0D16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A61645272EF669002D0D16 /* AppDelegate.swift */; };
 		F0A61648272EF669002D0D16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A61647272EF669002D0D16 /* SceneDelegate.swift */; };
 		F0A6164A272EF669002D0D16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A61649272EF669002D0D16 /* LoginViewController.swift */; };
@@ -28,6 +29,7 @@
 		66138C7C92C8C60BA75ECB70 /* Pods-Snacktacular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.release.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.release.xcconfig"; sourceTree = "<group>"; };
 		7F114803F3AACDD3112F0B8E /* Pods_Snacktacular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snacktacular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED8E5ED5B415699C7B4C75D /* Pods-Snacktacular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.debug.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.debug.xcconfig"; sourceTree = "<group>"; };
+		F048AB462738A7CC007E8388 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		F0A61642272EF669002D0D16 /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A61645272EF669002D0D16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0A61647272EF669002D0D16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				F0A6165B272F48B9002D0D16 /* SpotListViewController.swift */,
 				F0A6165D272F4C63002D0D16 /* SpotTableViewCell.swift */,
 				F0A6165F272F5EBD002D0D16 /* SpotDetailViewController.swift */,
+				F048AB462738A7CC007E8388 /* ReviewTableViewController.swift */,
 				F0A61663272FB191002D0D16 /* UIViewController+alert.swift */,
 				F0A61667272FBBFF002D0D16 /* APIKeys.swift */,
 				F0A6164B272EF669002D0D16 /* Main.storyboard */,
@@ -253,6 +256,7 @@
 				F0A6164A272EF669002D0D16 /* LoginViewController.swift in Sources */,
 				F0A61646272EF669002D0D16 /* AppDelegate.swift in Sources */,
 				F0A61660272F5EBD002D0D16 /* SpotDetailViewController.swift in Sources */,
+				F048AB472738A7CC007E8388 /* ReviewTableViewController.swift in Sources */,
 				F0A61666272FB454002D0D16 /* Spots.swift in Sources */,
 				F0A6165E272F4C63002D0D16 /* SpotTableViewCell.swift in Sources */,
 				F0A61668272FBC00002D0D16 /* APIKeys.swift in Sources */,
