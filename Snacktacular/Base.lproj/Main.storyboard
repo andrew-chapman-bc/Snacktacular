@@ -271,7 +271,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReviewCell" id="Cao-Gb-3sG">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReviewCell" id="Cao-Gb-3sG" customClass="SpotReviewTableViewCell" customModule="Snacktacular" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="424.66666603088379" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cao-Gb-3sG" id="MyV-aX-Jtk">
@@ -358,6 +358,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="reviewTextLabel" destination="5Qb-ow-YGb" id="46O-uc-Q6J"/>
+                                            <outlet property="reviewTitleLabel" destination="vfR-pN-4Ar" id="PFg-SU-S7m"/>
                                             <segue destination="VqR-yR-gnm" kind="show" identifier="ShowReview" id="ZsI-ok-aUi"/>
                                         </connections>
                                     </tableViewCell>
