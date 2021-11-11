@@ -26,6 +26,8 @@
 		F0A61666272FB454002D0D16 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A61665272FB454002D0D16 /* Spots.swift */; };
 		F0A61668272FBC00002D0D16 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A61667272FBBFF002D0D16 /* APIKeys.swift */; };
 		F0A6166A27307133002D0D16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0A6166927307133002D0D16 /* GoogleService-Info.plist */; };
+		F0C6EB49273CC62C00751580 /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6EB48273CC62C00751580 /* UIView+addBorder.swift */; };
+		F0C6EB4B273CC6D400751580 /* UIBarButtonItem+hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6EB4A273CC6D400751580 /* UIBarButtonItem+hide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		F0A61665272FB454002D0D16 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
 		F0A61667272FBBFF002D0D16 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		F0A6166927307133002D0D16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F0C6EB48273CC62C00751580 /* UIView+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBorder.swift"; sourceTree = "<group>"; };
+		F0C6EB4A273CC6D400751580 /* UIBarButtonItem+hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+hide.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				F048AB4C2738DA04007E8388 /* SpotReviewTableViewCell.swift */,
 				F048AB462738A7CC007E8388 /* ReviewTableViewController.swift */,
 				F0A61663272FB191002D0D16 /* UIViewController+alert.swift */,
+				F0C6EB48273CC62C00751580 /* UIView+addBorder.swift */,
+				F0C6EB4A273CC6D400751580 /* UIBarButtonItem+hide.swift */,
 				F0A61667272FBBFF002D0D16 /* APIKeys.swift */,
 				F0A6164B272EF669002D0D16 /* Main.storyboard */,
 				F0A6164E272EF66E002D0D16 /* Assets.xcassets */,
@@ -269,12 +275,14 @@
 				F048AB472738A7CC007E8388 /* ReviewTableViewController.swift in Sources */,
 				F048AB492738CA29007E8388 /* Review.swift in Sources */,
 				F0A61666272FB454002D0D16 /* Spots.swift in Sources */,
+				F0C6EB4B273CC6D400751580 /* UIBarButtonItem+hide.swift in Sources */,
 				F0A6165E272F4C63002D0D16 /* SpotTableViewCell.swift in Sources */,
 				F048AB4D2738DA05007E8388 /* SpotReviewTableViewCell.swift in Sources */,
 				F0A61668272FBC00002D0D16 /* APIKeys.swift in Sources */,
 				F0A61662272FA938002D0D16 /* Spot.swift in Sources */,
 				F0A61648272EF669002D0D16 /* SceneDelegate.swift in Sources */,
 				F0A61664272FB192002D0D16 /* UIViewController+alert.swift in Sources */,
+				F0C6EB49273CC62C00751580 /* UIView+addBorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
