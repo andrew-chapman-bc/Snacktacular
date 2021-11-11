@@ -6,13 +6,21 @@
 //
 
 import UIKit
+import Firebase
+
+private let dateFormatter: DateFormatter = {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateStyle = .medium
+    dateFormatter.timeStyle = .none
+    return dateFormatter
+}()
 
 class ReviewTableViewController: UITableViewController {
     @IBOutlet weak var cancelBarButton: UIBarButtonItem!
     @IBOutlet weak var saveBarButton: UIBarButtonItem!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
-    @IBOutlet weak var posedByLabel: UILabel!
+    @IBOutlet weak var postedByLabel: UILabel!
     @IBOutlet weak var buttonsBackgroundView: UIView!
     @IBOutlet weak var reviewTitleField: UITextField!
     @IBOutlet weak var reviewDateLabel: UILabel!
@@ -54,11 +62,42 @@ class ReviewTableViewController: UITableViewController {
         reviewTitleField.text = review.title
         reviewTextView.text = review.text
         rating = review.rating //will update rating stars on load
+        reviewDateLabel.text = "posted: \(dateFormatter.string(from: review.date))"
+        if review.documentID == "" {
+            addBordersToEditableObjects()
+        } else {
+            if review.reviewUserID == Auth.auth().currentUser?.uid { //Review posted by current user
+                self.navigationItem.leftItemsSupplementBackButton = false
+                saveBarButton.title = "Update"
+                addBordersToEditableObjects()
+                deleteButton.isHidden = false
+            } else { //review posted by different user
+                saveBarButton.hide()
+                cancelBarButton.hide()
+                
+                postedByLabel.text = "Posted by: \(review.reviewUserEmail)"
+                for starButton in starButtonCollection {
+                    starButton.backgroundColor = .white
+                    starButton.isEnabled = false
+                }
+                reviewTitleField.isEnabled = false
+                reviewTitleField.borderStyle = .none
+                reviewTextView.isEditable = false
+                reviewTitleField.backgroundColor = .white
+                reviewTextView.backgroundColor = .white
+            }
+        }
     }
 
     func updateFromUserInterface() {
         review.title = reviewTitleField.text!
         review.text = reviewTextView.text!
+    }
+    
+    func addBordersToEditableObjects() {
+        reviewTitleField.addBorder(width: 0.5, radius: 0.5, color: .black)
+        reviewTextView.addBorder(width: 0.5, radius: 0.5, color: .black)
+        buttonsBackgroundView.addBorder(width: 0.5, radius: 0.5, color: .black)
     }
     
     func leaveViewController() {
