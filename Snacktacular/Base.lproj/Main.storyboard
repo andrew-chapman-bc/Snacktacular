@@ -107,7 +107,7 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" id="YwP-xv-pk3">
-                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="G0Y-jW-wo5">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="G0Y-jW-wo5">
                                 <rect key="frame" x="20" y="10.5" width="374" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="PrimaryColor"/>
@@ -125,11 +125,19 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="aZT-bB-vh8">
-                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="iSf-qT-WvE">
-                            <connections>
-                                <segue destination="VNw-a6-tat" kind="unwind" identifier="SignOutUnwind" animates="NO" unwindAction="unwindSignOutPressedWithSegue:" id="0uw-m4-HKa"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem title="Sign Out" id="iSf-qT-WvE">
+                                <connections>
+                                    <segue destination="VNw-a6-tat" kind="unwind" identifier="SignOutUnwind" animates="NO" unwindAction="unwindSignOutPressedWithSegue:" id="0uw-m4-HKa"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="person.3" catalog="system" id="ZXT-e0-EAJ">
+                                <connections>
+                                    <action selector="usersButtonPressed:" destination="SeL-cH-ao1" id="zxw-40-lrv"/>
+                                    <segue destination="qPw-pc-E1h" kind="show" identifier="ShowUsers" id="PVI-y8-AeM"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="QIH-Qn-yQZ">
                             <connections>
                                 <segue destination="sia-7N-xAf" kind="presentation" identifier="AddDetail" modalPresentationStyle="fullScreen" id="l6e-NY-MSd"/>
@@ -979,6 +987,117 @@
             </objects>
             <point key="canvasLocation" x="4226" y="-611"/>
         </scene>
+        <!--Snack User View Controller-->
+        <scene sceneID="xwB-hw-jKm">
+            <objects>
+                <viewController id="qPw-pc-E1h" customClass="SnackUserViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sNL-mG-Pm9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bzr-je-yq6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="80" id="w2g-AS-Izl" customClass="SnackUserTableViewCell" customModule="Snacktacular" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w2g-AS-Izl" id="Lms-Y8-g97">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="AJ8-ah-69i">
+                                                    <rect key="frame" x="5" y="5.5" width="70" height="69"/>
+                                                    <color key="tintColor" name="PrimaryColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="DBC-Hh-zD3"/>
+                                                        <constraint firstAttribute="width" constant="70" id="lq9-Nu-Y4p"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Name Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THD-iv-Kb6">
+                                                    <rect key="frame" x="83" y="5" width="323" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="98M-Dv-gPe"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longemail.sample@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbr-t2-gwE">
+                                                    <rect key="frame" x="79" y="30" width="327" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="ltz-WO-FV2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec. 32 2100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdi-ZK-5TW">
+                                                    <rect key="frame" x="161" y="54" width="245" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="bsq-dE-pSr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Since:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgF-bO-fT2">
+                                                    <rect key="frame" x="83" y="55" width="70" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="DhL-OO-bnK"/>
+                                                        <constraint firstAttribute="width" constant="70" id="k6x-ni-pP6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="THD-iv-Kb6" secondAttribute="trailing" constant="8" id="1p1-hc-fon"/>
+                                                <constraint firstItem="THD-iv-Kb6" firstAttribute="top" secondItem="Lms-Y8-g97" secondAttribute="top" constant="5" id="2X5-vf-WhF"/>
+                                                <constraint firstItem="THD-iv-Kb6" firstAttribute="leading" secondItem="AJ8-ah-69i" secondAttribute="trailing" constant="8" id="2lP-FW-56x"/>
+                                                <constraint firstAttribute="trailing" secondItem="Xdi-ZK-5TW" secondAttribute="trailing" constant="8" id="B7Y-bg-Dh1"/>
+                                                <constraint firstAttribute="trailing" secondItem="Kbr-t2-gwE" secondAttribute="trailing" constant="8" id="DlJ-OY-vhe"/>
+                                                <constraint firstItem="Xdi-ZK-5TW" firstAttribute="leading" secondItem="EgF-bO-fT2" secondAttribute="trailing" constant="8" id="GpT-bl-foD"/>
+                                                <constraint firstItem="Kbr-t2-gwE" firstAttribute="leading" secondItem="AJ8-ah-69i" secondAttribute="trailing" constant="4" id="Yox-Bs-PzU"/>
+                                                <constraint firstAttribute="bottom" secondItem="AJ8-ah-69i" secondAttribute="bottom" constant="5" id="Z4v-ig-lnZ"/>
+                                                <constraint firstItem="EgF-bO-fT2" firstAttribute="leading" secondItem="AJ8-ah-69i" secondAttribute="trailing" constant="8" id="alg-5u-ueM"/>
+                                                <constraint firstItem="AJ8-ah-69i" firstAttribute="top" secondItem="Lms-Y8-g97" secondAttribute="top" constant="5" id="azc-JU-QBQ"/>
+                                                <constraint firstItem="Kbr-t2-gwE" firstAttribute="top" secondItem="THD-iv-Kb6" secondAttribute="bottom" constant="4" id="hRb-Wg-zY7"/>
+                                                <constraint firstItem="EgF-bO-fT2" firstAttribute="top" secondItem="Kbr-t2-gwE" secondAttribute="bottom" constant="4" id="pGd-qt-fZ8"/>
+                                                <constraint firstItem="AJ8-ah-69i" firstAttribute="leading" secondItem="Lms-Y8-g97" secondAttribute="leading" constant="5" id="r6U-oO-rNr"/>
+                                                <constraint firstItem="Xdi-ZK-5TW" firstAttribute="top" secondItem="Kbr-t2-gwE" secondAttribute="bottom" constant="3" id="yl6-vd-A7A"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="displayNameLabel" destination="THD-iv-Kb6" id="hD0-AQ-aLD"/>
+                                            <outlet property="emailLabel" destination="Kbr-t2-gwE" id="KcF-uS-D6S"/>
+                                            <outlet property="userImageView" destination="AJ8-ah-69i" id="mYH-Au-H03"/>
+                                            <outlet property="userSinceLabel" destination="Xdi-ZK-5TW" id="MWu-Sw-UoZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mJH-QD-gdr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bzr-je-yq6" firstAttribute="leading" secondItem="mJH-QD-gdr" secondAttribute="leading" id="2dK-by-Hp5"/>
+                            <constraint firstItem="mJH-QD-gdr" firstAttribute="trailing" secondItem="bzr-je-yq6" secondAttribute="trailing" id="Rb5-Tt-xay"/>
+                            <constraint firstItem="mJH-QD-gdr" firstAttribute="bottom" secondItem="bzr-je-yq6" secondAttribute="bottom" id="cvS-iD-oVU"/>
+                            <constraint firstItem="bzr-je-yq6" firstAttribute="top" secondItem="mJH-QD-gdr" secondAttribute="top" id="dbT-df-l80"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JjC-kD-4vj"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="bzr-je-yq6" id="PxF-Xp-gL5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSq-Wt-ilx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2682.608695652174" y="805.58035714285711"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="fyz-mK-Btw">
             <objects>
@@ -1013,6 +1132,8 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="PrimaryColor">
