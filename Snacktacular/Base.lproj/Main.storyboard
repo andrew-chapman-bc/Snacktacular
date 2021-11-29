@@ -80,6 +80,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="biW-ul-rit" secondAttribute="trailing" constant="8" id="Djk-tL-UUB"/>
                                                 <constraint firstAttribute="trailing" secondItem="Niw-eY-SRd" secondAttribute="trailing" constant="8" id="EFz-rj-q2a"/>
                                                 <constraint firstItem="Niw-eY-SRd" firstAttribute="leading" secondItem="mgw-Hn-wJH" secondAttribute="leading" constant="8" id="HeN-x1-oPW"/>
+                                                <constraint firstItem="biW-ul-rit" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="X5T-7r-hry" secondAttribute="trailing" constant="8" symbolic="YES" id="Vdz-Jd-5s4"/>
                                                 <constraint firstItem="X5T-7r-hry" firstAttribute="leading" secondItem="mgw-Hn-wJH" secondAttribute="leadingMargin" constant="16" id="Y1A-aK-MUd"/>
                                                 <constraint firstItem="biW-ul-rit" firstAttribute="bottom" secondItem="mgw-Hn-wJH" secondAttribute="bottomMargin" constant="4" id="avd-uu-oY5"/>
                                                 <constraint firstItem="X5T-7r-hry" firstAttribute="bottom" secondItem="mgw-Hn-wJH" secondAttribute="bottomMargin" constant="4" id="g6N-jD-STn"/>
@@ -248,11 +249,11 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Rw-5j-dCW">
-                                            <rect key="frame" x="316" y="346" width="90" height="29"/>
+                                            <rect key="frame" x="307.5" y="346" width="98.5" height="29"/>
                                             <color key="backgroundColor" name="PrimaryColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="29" id="ot0-bk-X9h"/>
-                                                <constraint firstAttribute="width" constant="90" id="t5Q-qW-pwA"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="t5Q-qW-pwA"/>
                                             </constraints>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
@@ -264,11 +265,11 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DY-Tu-3jt">
-                                            <rect key="frame" x="218" y="346" width="90" height="29"/>
+                                            <rect key="frame" x="200.5" y="346" width="99" height="29"/>
                                             <color key="backgroundColor" name="PrimaryColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="29" id="XER-NE-2YO"/>
-                                                <constraint firstAttribute="width" constant="90" id="oZk-B4-t6m"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="oZk-B4-t6m"/>
                                             </constraints>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
@@ -429,7 +430,7 @@
                                 <action selector="cancelButtonPressed:" destination="Kas-KH-d5r" id="VyR-MI-PMJ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" style="plain" id="EA4-uY-fxj">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="EA4-uY-fxj">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="Kas-KH-d5r" id="9nj-9n-YD0"/>
                             </connections>
@@ -541,7 +542,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="40" id="G9z-81-CSy"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="G9z-81-CSy"/>
                                                                 <constraint firstAttribute="height" constant="40" id="GDs-7e-EX1"/>
                                                             </constraints>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -558,7 +559,7 @@
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="b02-L7-ht6"/>
-                                                                <constraint firstAttribute="width" constant="40" id="nao-Al-els"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="nao-Al-els"/>
                                                             </constraints>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
@@ -574,7 +575,7 @@
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="9on-jN-WPm"/>
-                                                                <constraint firstAttribute="width" constant="40" id="XOi-NM-if2"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="XOi-NM-if2"/>
                                                             </constraints>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
@@ -590,7 +591,7 @@
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="Lw8-ca-t0s"/>
-                                                                <constraint firstAttribute="width" constant="40" id="fcS-xK-UkH"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="fcS-xK-UkH"/>
                                                             </constraints>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
@@ -606,7 +607,7 @@
                                                             <color key="backgroundColor" name="UI Element Background"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="40" id="3Ix-Ek-fch"/>
-                                                                <constraint firstAttribute="width" constant="40" id="BDh-lC-Kod"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="BDh-lC-Kod"/>
                                                             </constraints>
                                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <state key="normal" title="Button"/>
@@ -650,7 +651,7 @@
                                                     <rect key="frame" x="8" y="10" width="82" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="5i1-Nu-PeD"/>
-                                                        <constraint firstAttribute="width" constant="82" id="l88-UO-FTx"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="l88-UO-FTx"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -693,7 +694,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4T-TO-Vbc">
                                                     <rect key="frame" x="8" y="12" width="51" height="24"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="51" id="HgT-0c-OTg"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="HgT-0c-OTg"/>
                                                         <constraint firstAttribute="height" constant="24" id="lRw-fG-c5o"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
@@ -704,7 +705,7 @@
                                                     <rect key="frame" x="231" y="12" width="175" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="LjA-IQ-6qA"/>
-                                                        <constraint firstAttribute="width" constant="175" id="bW5-hp-W5l"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="bW5-hp-W5l"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Italic" family="Avenir Next Condensed" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -744,7 +745,7 @@
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbi-Sq-Yin">
                                                     <rect key="frame" x="112" y="8" width="190" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="190" id="AKj-ek-jOi"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="AKj-ek-jOi"/>
                                                         <constraint firstAttribute="height" constant="30" id="ao1-MC-JMI"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -1032,7 +1033,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec. 32 2100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdi-ZK-5TW">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Dec. 32 2100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdi-ZK-5TW">
                                                     <rect key="frame" x="161" y="54" width="245" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="bsq-dE-pSr"/>
@@ -1045,7 +1046,7 @@
                                                     <rect key="frame" x="83" y="55" width="70" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="DhL-OO-bnK"/>
-                                                        <constraint firstAttribute="width" constant="70" id="k6x-ni-pP6"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="k6x-ni-pP6"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                                                     <nil key="textColor"/>
